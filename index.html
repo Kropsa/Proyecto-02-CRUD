@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Proyecto CRUD</title>
 </head>
 <body>
+    <h1>
+        <center>AGENDA TU VISITA</center>
+    </h1>
+    <hr>
+    <div class="form-container p-2">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input type="Nombre" class="form-control" id="inputName" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="Email" class="form-control" id="inputEmail" placeholder="Correo electronico">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Fecha</label>
+                    <input type="Day" class="form-control" id="inputDay" placeholder="Dia/Mes/Año">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Hora</label>
+                    <input type="Hour" class="form-control" id="inputHour" placeholder="Hora">
+                </div>
+                <div class="container">
+                    <button type="submit" class="btn btn-primary" id="btnAdd" onclick="addData()">Enviar datos</button>
+                    <button type="submit" class="btn btn-warning" id="btnUpdate">Actualizar datos</button>
+                </div>
+            </div>
+            <hr>
+            <table class="table table-bordered" id="tableData">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Hora</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
     
 </body>
 </html>
